@@ -16,5 +16,10 @@
   "bugs": {
     "url": "https://github.com/jennymarin1989/Mongo-Express-Node-app/issues"
   },
-  "homepage": "https://github.com/jennymarin1989/Mongo-Express-Node-app#readme"
+  "homepage": "https://github.com/jennymarin1989/Mongo-Express-Node-app#readme",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "express": "^4.16.3",
+    "mongodb": "^2.2.16"
+  }
 }
