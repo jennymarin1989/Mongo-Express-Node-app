@@ -10,4 +10,11 @@ describe('listen', ()=>{
       done();
     })
   })
+
+  it('connects to the server', function(done){
+    request('http://localhost:8000/api', function(error, response, body){
+      expect(response.statusCode).to.equal(200);
+      done();
+    })
+  })
 })
