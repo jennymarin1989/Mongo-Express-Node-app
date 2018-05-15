@@ -17,4 +17,11 @@ describe('listen', ()=>{
       done();
     })
   })
+
+  it('return error if connection is not successful', function(done){
+    request('http://localhost:8000', function(error, response, body) {
+      expect(response.statusCode).to.equal(404);
+      done();
+    })
+  })
 })
