@@ -34,17 +34,15 @@ describe('listen', ()=>{
   describe('database connections', ()=>{
     //before testing anything, I have to be sure I'm connecting to the db
     before(function(done){
-      mongoose.connect('mongodb://localhost/mern-note');
+      mongoose.connect('mongodb:localhost/notes');
       mongoose.connection.once('open', function(){
         console.log('connected to mongodb');
         done();
-      }).on('error', function(){
+      })
+      .on('error', function(){
         console.log('connection error');
       })
     })
 
-
   })
-
-
 })
